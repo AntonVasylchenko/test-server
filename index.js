@@ -20,6 +20,11 @@ app.post('/post-endpoint', (req, res) => {
     });
 });
 
+// Додайте GET endpoint для перевірки
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
 // Запустіть сервер
 app.listen(port, () => {
     console.log(`Сервер запущений на http://localhost:${port}`);
