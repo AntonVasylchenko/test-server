@@ -12,8 +12,8 @@ app.use(express.json());
 
 // Створіть POST endpoint
 app.post('/post-endpoint', (req, res) => {
-    const data = req.body;
-    console.log(data);
+    const data = req;
+    console.log(req);
     res.json({
         message: 'Дані отримані успішно!',
         receivedData: data
