@@ -36,12 +36,17 @@ app.post('/post-endpoint', async (req, res) => {
   console.log("End point");
   
   try {
+    console.log("True");
+    console.log(req);
+    console.log("True");
+    
     res.json({
       message: 'Дані отримані успішно!'
     });
 
   } catch (error) {
-    console.log(error);
+
+    console.log("error");
     res.json({
       message: "error"
     });
